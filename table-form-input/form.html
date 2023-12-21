@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoc form</title>
+</head>
+<body>
+    <form name="formdangnhap" method="pots" action="xulidangnhap.php">
+        <label>Nhap thong tin :</label>
+        <input type="text" name="textnhapthongtin" id="textnhapthongtin"/>
+        <br/>
+        <label>Nhap mat khau :</label>
+        <input type="password" name="textnhapmatkhau" id="textnhapmatkhau"/>
+    </form>
+
+
+    <form name="bieumaunhaplieuform" method="post" action="#">
+        <input type="hidden" name="khoabimat" id="khoabimat" value="ac###"/> 
+        <table border="1" id="bieumaunhaplieu">
+             <tr height="30px">
+                <td colspan="2" align="center" bgcolor="#279aec">
+                    <b>thong tin dang nhap </b>
+                </td>
+             </tr>
+             <tr height="30px">
+               <td >
+               <label for="texttendangnhap"> Ten dang nhap :</label>
+               </td>
+               <td>
+              `
+               </td>
+             </tr>
+
+             <tr height="30px">
+                <td >
+                   <label for="nhapmatkhau">nhap mat khau :</label> 
+                </td>
+                <td>
+                <input type="password" name="nhapmatkhau" id="nhapmatkhau"/>
+                </td>
+            </tr>
+
+            <tr height="30px">
+                <td >
+                   <label for="nhapghichu">ghi chu :</label> 
+                </td>
+                <td>
+                   <textarea name="nhapghichu" id="nhapghichu" rows="10" cols="80"></textarea>
+                </td>
+            </tr>
+
+            <tr height="30px">
+                <td colspan="2" align="center" bgcolor="blue">
+                    <button type="submit" name="thongtindangnhap" id="thongtindangnhap" value="Đăng Nhâp"> dang nhap </button>
+                </td>
+             </tr>
+
+             <tr height="30px">
+                <td colspan="2" align="center" bgcolor="blue">
+                    <button type="submit" name="nutesset" id="nutesset" > resset </button>
+                </td>
+             </tr>
+
+             <tr height="30px">
+               <td colspan="2" align="center" valigin="middle">
+                   <label>Nhung mon keo theo</label><br />
+                   <label><input type="checkbox" name="chkmonkemtheo" id="chkmonkemtheo_1" value="3000"/>Banh Plan</label><br />
+                   <label><input type="checkbox" name="chkmonkemtheo" id="chkmonkemtheo_2" value="3000"/>Banh putdinh</label><br />
+                   <label><input type="checkbox" name="chkmonkemtheo" id="chkmonkemtheo_3" value="3000"/>Banh ngot</label><br />
+               </td> 
+             </tr>
+             <tr height="30px">
+                <td colspan="2" align="center" valigin="middle">
+                    <label>Gioi Tinh</label><br />
+                    <label><input type="radio" name="rdGioitinh" id="rdGioitinh_1" value="1"/>Nam</label><br />
+                    <label><input type="radio" name="rdGioitinh" id="rdGioitinh_2" value="2"/>Nu</label><br />
+                    <label><input type="radio" name="rdGioitinh" id="rdGioitinh_3" value="3"/>Khong biet</label><br />
+                </td> 
+              </tr>
+
+              <tr height="30px">
+                <td colspan="2" align="center" valigin="middle">
+                    <label>Tinh Thanh</label><br />
+                    <select name="slTinhThanh" id="slTinhThanh">
+                      <option value="">Moi ban lua chon tinh thanh</option>
+                      <option value="dn">TPDa Nang</option>
+                      <option value="hcm">TP Ho Chi Minh</option>
+                      <option value="hn">TP Ha Noi</option>
+                    </select>
+                </td> 
+              </tr>
+
+            </table>
+
+              
+    </form>
+</body>
+</html>
